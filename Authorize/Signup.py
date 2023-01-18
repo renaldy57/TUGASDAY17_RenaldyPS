@@ -13,7 +13,7 @@ class TestSignUp(unittest.TestCase):
     def setUp(self): 
         self.driver = webdriver.Chrome(ChromeDriverManager().install())
         
-    def test_SignUp_Positif(self): #Ubah email atau passwordnya jika ingin run ini success
+    def test_SignUp_Positif(self): #Ubah emailnya jika ingin run ini success
         driver = self.driver
         driver.get("http://barru.pythonanywhere.com/daftar") # buka situs
         driver.maximize_window()
